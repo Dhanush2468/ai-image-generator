@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Dhanush2468.github.io/ai-image-generator/static/css/main.cc4b1f10.css",
-    "main.js": "/Dhanush2468.github.io/ai-image-generator/static/js/main.c1e95fa7.js",
+    "main.js": "/Dhanush2468.github.io/ai-image-generator/static/js/main.d9ee41ae.js",
     "static/js/787.196dde39.chunk.js": "/Dhanush2468.github.io/ai-image-generator/static/js/787.196dde39.chunk.js",
     "static/media/background.jpeg": "/Dhanush2468.github.io/ai-image-generator/static/media/background.5646e990d9e4753c485f.jpeg",
     "static/media/logo.png": "/Dhanush2468.github.io/ai-image-generator/static/media/logo.40aabf84e2a6b69e3a0a.png",
     "index.html": "/Dhanush2468.github.io/ai-image-generator/index.html",
     "main.cc4b1f10.css.map": "/Dhanush2468.github.io/ai-image-generator/static/css/main.cc4b1f10.css.map",
-    "main.c1e95fa7.js.map": "/Dhanush2468.github.io/ai-image-generator/static/js/main.c1e95fa7.js.map",
+    "main.d9ee41ae.js.map": "/Dhanush2468.github.io/ai-image-generator/static/js/main.d9ee41ae.js.map",
     "787.196dde39.chunk.js.map": "/Dhanush2468.github.io/ai-image-generator/static/js/787.196dde39.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cc4b1f10.css",
-    "static/js/main.c1e95fa7.js"
+    "static/js/main.d9ee41ae.js"
   ]
 }
