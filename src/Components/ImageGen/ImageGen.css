@@ -1,0 +1,240 @@
+/* ImageGen.css */
+
+/* Overall styling for the image generator container */
+.ai-img-gen {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 30px;
+    max-width: 1200px; /* Added a maximum width for responsiveness */
+    padding: 0 20px; /* Added padding for responsiveness */
+}
+
+/* Styling for the header */
+.header {
+    font-size: 40px; /* Reduced font size for smaller screens */
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.header span {
+    color: #ff6b00;
+    font-weight: 600;
+}
+
+/* Styling for the image container */
+.img-loading {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.img-loading img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+}
+
+/* Styling for the search box */
+.search-box {
+    display: flex;
+    width: 100%;
+    height: 85px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    position: relative; /* Position it at the bottom */
+    bottom: 0; /* Stick it to the bottom */
+    backdrop-filter: blur(10px);
+    background: rgb(0, 66, 92);
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+
+/* Styling for the search input */
+.search-input {
+    flex: 1; /* Let it grow to take available space */
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    padding-left: 15px; /* Reduced padding for smaller screens */
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+/* Styling for the Generate button */
+.generate-btn {
+    width: 100%; /* Make it full-width for responsiveness */
+    height: 60px; /* Reduced height for smaller screens */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 50px;
+    background: #ff6b00;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    position: relative; /* Added for loading spinner positioning */
+}
+
+.generate-btn:hover {
+    background: transparent; /* Remove background color on hover */
+    border: 1px solid #ff6b00;
+}
+
+/* Styling for the loading bar and spinner */
+.loading-bar {
+    width: 0px;
+    height: 8px;
+    background: #ff6b00;
+    position: relative;
+}
+
+.loading-spinner {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 50%; /* Center the spinner vertically */
+    left: 50%; /* Center the spinner horizontally */
+    transform: translate(-50%, -50%); /* Center the spinner precisely */
+}
+
+.loading-dot {
+    width: 12px;
+    height: 12px;
+    background: #ff6b00;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite; /* Added pulse animation */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 0.6;
+    }
+}
+
+/* Styling for loading text */
+.loading-text {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+/* Styling for the Clear button */
+.clear-btn {
+    width: 100%; /* Make it full-width for responsiveness */
+    height: 60px; /* Reduced height for smaller screens */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 50px;
+    background: #ff6b00;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.clear-btn:hover {
+    background: transparent; /* Change the background color on hover */
+    border: 1px solid #ff6b00;
+}
+.download-btn {
+    width: fit-content; /* Make it fit the content */
+    padding: 10px 20px; /* Add padding to the button */
+    margin-top: 10px; /* Adjust margin as needed */
+    font-size: 18px;
+    border-radius: 50px;
+    background: #ff6b00;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.download-btn:hover {
+    background: #ff4500; /* Change background color on hover */
+}
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+
+    .header {
+        font-size: 30px;
+        justify-content: center;
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .search-input {
+        width: 100%; /* Make it full-width for smaller screens */
+        height: 50px;
+        font-size: 18px;
+        padding-left: 15px; /* Reduced padding for smaller screens */
+    }
+
+    .generate-btn {
+        width: 30%; /* Make it full-width for smaller screens */
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .loading-text {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    .clear-btn {
+        width: 30%; /* Make it full-width for smaller screens */
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .img-loading img {
+        max-width: 100%;
+    }
+
+    .loading-spinner {
+        width: 40px;
+        height: 40px;
+    }
+
+    .loading-dot {
+        width: 10px;
+        height: 10px;
+    }
+    .titles {
+        margin-bottom: 60px;
+    }
+    /* Add additional responsive styles for other elements here */
+}
+
+/* Media Query for larger screens (laptops or PCs) */
+@media (min-width: 1024px) {
+    .generate-btn {
+        width: 250px; /* Adjust the width as needed for larger screens */
+    }
+    .clear-btn {
+        width: 250px;
+    }
+    .header {
+        font-size: 50px;
+        justify-content: center;
+        display: flex;
+    }
+    /* Add additional styles for larger screens here */
+}
